@@ -4,7 +4,7 @@
 
 <div class="container-contact100" style="background-image: url('images/bg-01.jpg');">
     <div class="wrap-contact100">
-        <form class="contact100-form validate-form">
+        <form class="contact100-form validate-form" [formGroup]="form">
             <span class="contact100-form-title">
          გადაადგილების მიზანი
             </span>
@@ -12,23 +12,26 @@
 
             <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
                 <span class="label-input100">ქვეყანა, საიდანაც ჩამობრძანდით</span>
-                <select class="input100" style="height: 60px" name="country" id="">
+                <select class="input100" style="height: 60px" name="country" id="" formControlName="countryFrom">
                    <option *ngFor="let country of countryList" [value]="country.Country">{{country.Name}}</option>
-                 
-               
                </select>
             </div>
 
             <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                 <span class="label-input100">ავტომობილის ნომერი</span>
                 <!-- <input class="input100" type="text" placeholder="AA-00-AA" type="text" > -->
-                <input class="input100" type="text" placeholder="AA-00-AA" #input (input)="input.value=$event.target.value.toUpperCase()" />
+                <input
+                  class="input100" type="text"
+                  placeholder="AA-00-AA"
+                  #input (input)="input.value=$event.target.value.toUpperCase()"
+                  formControlName="carNumber"
+                />
             </div>
 
             <div class="container-contact100-form-btn ">
                 <div class="wrap-contact100-form-btn ">
                     <div class="contact100-form-bgbtn "></div>
-                    <button (click)="onSubmit() " class="contact100-form-btn ">
+                    <button *ngIf="form.status != 'INVALID' && !form.error" (click)="onSubmit() " class="contact100-form-btn ">
                         შემდეგი
                     </button>
                 </div>

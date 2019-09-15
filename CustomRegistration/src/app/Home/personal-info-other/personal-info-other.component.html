@@ -19,7 +19,7 @@
 
             <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                 <span class="label-input100">დაბადების ადგილი *</span>
-                <select class="input100" style="height: 60px" name="country" id="">
+                <select class="input100" style="height: 60px" name="country" formControlName="birthLoc">
                     <option *ngFor="let country of countryList" [value]="country.Country">{{country.Name}}</option>                
                 
                 </select>
@@ -33,15 +33,14 @@
             </div>
             <div class="wrap-input100">
                 <span class="label-input100">მუდმივი საცხოვრებელი</span>
-                <select class="input100" style="height: 60px" name="country" id="">
+                <select class="input100" style="height: 60px" name="country" formControlName="address">
                     <option *ngFor="let country of countryList" [value]="country.Country">{{country.Name}}</option>                
                 
                 </select>
             </div>
 
 
-
-            <div *ngIf="show" class="container-contact100-form-btn">
+            <div *ngIf="form.status !='INVALID' && !form.error" class="container-contact100-form-btn">
                 <div class="wrap-contact100-form-btn">
                     <div class="contact100-form-bgbtn"></div>
                     <button (click)="onSubmit()" class="contact100-form-btn ">
@@ -52,9 +51,13 @@
         </form>
     </div>
 
+<<<<<<< HEAD
 
 </div>
 
 <div class="input-group date">
     <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
 </div>
+=======
+</div>
+>>>>>>> 962c403fce81527043d7449a1bdf414e545d480d
