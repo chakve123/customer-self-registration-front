@@ -1,0 +1,58 @@
+<app-header></app-header>
+
+<div class="row">
+    <div class="col">
+        <div class="row">
+            <div class="col top-bar">
+                <i (click)="onBack()" class="material-icons float-left">arrow_back</i>
+                <span>ფიზიკური პირის საბაჟო დეკლარაცია</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-contact100" style="background-image: url('images/bg-01.jpg');">
+    <div class="wrap-contact100">
+        <form class="contact100-form validate-form" [formGroup]="form">
+            <span class="contact100-form-title">
+             მოქალაქეობა და პირადი მონაცემები
+            </span>
+
+            <div class="personDiv" data-validate="Name is required">
+                <span class="personSpan">პირადი ნომერი *</span>
+                <input class="PersonInput" type="text" name="name" placeholder="პირადი ნომერი" formControlName="id">
+            </div>
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100">სახელი,გვარი *</span>
+                <input class="input100" type="text" name="name" placeholder="სახელი,გვარი" formControlName="fullName" disabled="false">
+            </div>
+
+            <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                <span class="label-input100">დაბადების ადგილი *</span>
+                <input class="input100" type="text" name="email" placeholder="დაბადების ადგილი" formControlName="birthLoc" disabled="false">
+            </div>
+
+            <div class="wrap-input100">
+                <span class="label-input100">დაბადების თარიღი</span>
+                <input class="input100" type="text" name="web" formControlName="birthDate" disabled="false">
+            </div>
+            <div class="wrap-input100">
+                <span class="label-input100">მუდმივი საცხოვრებელი</span>
+                <input class="input100" type="text" placeholder="მუდმივი საცხოვრებელი" formControlName="address" disabled="false">
+            </div>
+
+
+
+            <div *ngIf="show" class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button (click)="onSubmit()" class="contact100-form-btn ">
+                        შემდეგი
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</div>

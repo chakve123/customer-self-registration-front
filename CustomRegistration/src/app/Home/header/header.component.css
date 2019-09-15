@@ -1,0 +1,65 @@
+header.MainHeader {
+    width: auto;
+    height: 70px;
+    background-color: #2d7ed0;
+    margin-bottom: 50px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+}
+
+header .HeaderIcon {
+    padding-left: 10px !important;
+}
+
+header>div.HeaderTitle p {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 25px;
+    min-width: 105px;
+}
+
+header>div.HeaderTitle {
+    background: transparent;
+    width: calc(100% - 756px);
+    height: 100%;
+    margin: auto;
+    /* //padding-top: 25px; */
+    position: relative;
+    float: center;
+}
+
+header .HeaderIcon i {
+    color: #fff;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+header .HeaderIcon {
+    padding-top: 20px;
+    /*   padding-left: 25px; */
+    float: left;
+    position: relative;
+    z-index: 9;
+    margin-left: 30px;
+}
+
+.MainNote {
+    width: auto;
+    height: 70px;
+    background-color: #eeeef0;
+    margin-bottom: 50px;
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+}
+
+.MainNote p {
+    color: tomato;
+    text-align: center;
+}

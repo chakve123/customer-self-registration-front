@@ -1,0 +1,17 @@
+<div class="row" style="background-color: rgb(231, 236, 236)">
+    <div id="sidebar" class="col-4 ">
+        <h1>ფიზიკური პირის ქონების დეკლარაცია</h1>
+        <h2>Persons property declaration</h2>
+        <h2>Декларация о собственности Физическое лица</h2>
+    </div>
+    <div class="col languages p-5 m-5">
+        <h4 class="mb-5">აირჩიეთ ენა / Choose Language / выберите язык</h4>
+
+        <div (click)="onClick()" class="row flags-container">
+            <div class="col" *ngFor="let country of countryList">
+                <img [src]="country.imgPath">
+                <p>{{country.name}}</p>
+            </div>
+        </div>
+    </div>
+</div>

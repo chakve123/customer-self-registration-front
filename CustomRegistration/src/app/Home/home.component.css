@@ -1,0 +1,29 @@
+.flags-container {
+    display: flex;
+}
+
+.flags-container .col {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flags-container img,
+.flags-container>div>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.flags-container p {
+    margin-top: 10px
+}
+
+.flags-container img {
+    width: 150px;
+    height: 100px;
+}

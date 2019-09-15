@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    font-family: 'FiraRegular' !important;
+}
+
+#sidebar {
+    background: url(./assets/imgs/sidebar-image.png) no-repeat;
+    height: 1080px;
+    color: #FFF;
+    padding-top: 300px;
+    padding-left: 80px;
+}
+
+#sidebar>h1,
+#sidebar>h2 {
+    margin-bottom: 50px;
+    opacity: 0.9;
+}
+
+.languages>h4 {
+    font-size: 29px;
+    color: #9C9C9C;
+}
+
+.languages .row .col {
+    text-align: center;
+}
+
+.languages .row .col div {
+    margin-top: 10px;
+}
+
+.languages>.row {
+    margin-bottom: 100px;
+}
+
+@font-face {
+    font-family: 'FiraRegular';
+    src: url(./assets/fonts/fira-regular.ttf);
+}
+
+@font-face {
+    font-family: 'FiraMedium';
+    src: url(./assets/fonts/fira-medium.ttf);
+}
+
+.top-bar {
+    background: #04469C;
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+}
+
+.top-bar i {
+    background: #033981;
+    padding: 30px;
+    font-size: 40px;
+}
+
+.top-bar span {
+    display: inline-block;
+    margin-left: -120px;
+    margin-top: 30px;
+}
+
+.gray-heading {
+    color: #9C9C9C;
+    font-size: 29px;
+}
+
+.huge-button {
+    font-size: 37px;
+    color: #364E6D;
+    background: #E4E5E9;
+    padding: 80px;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 36px;
+}

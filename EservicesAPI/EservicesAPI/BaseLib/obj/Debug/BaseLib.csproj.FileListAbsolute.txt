@@ -1,0 +1,13 @@
+D:\Projects\EservicesAPI\BaseLib\bin\Debug\BaseLib.dll
+D:\Projects\EservicesAPI\BaseLib\bin\Debug\BaseLib.pdb
+D:\Projects\EservicesAPI\BaseLib\bin\Debug\HtmlSanitizationLibrary.dll
+D:\Projects\EservicesAPI\BaseLib\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\EservicesAPI\BaseLib\bin\Debug\NPOI.dll
+D:\Projects\EservicesAPI\BaseLib\bin\Debug\Oracle.DataAccess.dll
+D:\Projects\EservicesAPI\BaseLib\bin\Debug\SevenZipSharp.dll
+D:\Projects\EservicesAPI\BaseLib\bin\Debug\Newtonsoft.Json.pdb
+D:\Projects\EservicesAPI\BaseLib\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\EservicesAPI\BaseLib\obj\Debug\BaseLib.csproj.CoreCompileInputs.cache
+D:\Projects\EservicesAPI\BaseLib\obj\Debug\BaseLib.csproj.CopyComplete
+D:\Projects\EservicesAPI\BaseLib\obj\Debug\BaseLib.dll
+D:\Projects\EservicesAPI\BaseLib\obj\Debug\BaseLib.pdb

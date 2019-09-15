@@ -1,0 +1,95 @@
+<app-header></app-header>
+<div class="row">
+    <div class="col">
+        <div class="row">
+            <div class="col top-bar">
+                <i (click)="onBack()" class="material-icons float-left">arrow_back</i>
+                <span>ფიზიკური პირის საბაჟო დეკლარაცია</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mainDiv">
+    <h3>ინფორმაცია საქონლის შესახებ</h3>
+
+
+    <div [formGroup]="form" class="row mb-6">
+        <div class="col mr-2">
+            <label for="" class="cc-label">
+          ფულადი სახსრები
+        </label>
+
+            <select formControlName="cash" class="cc-style"> 
+                <option value="nagdi_fuli">ნაღდი ფული</option>
+                <option value="cheki">ჩეკი</option>
+                <option value="fasiani_qagaldi">ფასიანი ქაღალდი</option>
+
+            </select>
+        </div>
+
+        <div class="col mr-2">
+            <label for="" class="cc-label">რაოდენობა</label>
+            <input type="number" name="" id="" class="cc-style" />
+        </div>
+
+        <div class="col mr-2">
+            <label for="" class="cc-label">
+          ვალუტა
+        </label>
+            <select formControlName="currency" class="cc-style">
+                <option value="2.998">USD</option>
+                <option value="3.317">EUR</option>
+                <option value="3.718">GBP</option>
+                <option value="0.0466">RUB</option>
+                <option value="3.046">CHF</option>
+                <option value="0.5869">TRY</option>
+                <option value="0.1322">UAH</option>
+                <option value="2.359">CAD</option>
+                <option value="1.885">AZN</option>
+                <option value="0.006749">AMD</option>
+                <option value="0.008691">KZT</option>
+                <option value="0.3223">SEK</option>
+                <option value="0.3481">NOK	</option>
+                <option value="0.4594">DKK</option>
+                <option value="0.02892">JPY</option>
+                <option value="1.489">BYN</option>
+                <option value="0.8753">AED</option>
+                <option value="0.8777">ILS</option>
+                <option value="0.4225">CNY</option>
+                <option value="0.1326">CZK</option>
+                <option value="0.79">PLN</option>
+            </select>
+        </div>
+
+        <div class="col mr-2">
+            <label for="" class="cc-label">კურსი</label>
+            <input formControlName="course" type="text" name="" id="" class="cc-style" />
+        </div>
+
+        <div>
+            <label for="" class="cc-label">დამატება</label>
+            <button class="cc-style">+ დამატება</button>
+        </div>
+    </div>
+
+
+
+    <table class="table" style=" margin-left: 40%;">
+        <tr>
+            <th>Cash</th>
+            <th>Number Name</th>
+            <th>Currency</th>
+            <th>Course</th>
+        </tr>
+
+        <tr ng-repeat="f in form">
+            <td><label>{{f.cash}}</label></td>
+            <td><label>{{f.number}}</label></td>
+            <td><label>{{f.currency}}</label></td>
+            <td><input type="button" value="X"></td>
+
+        </tr>
+    </table>
+
+    <div><button (click)="confirm()"> Confirm</button></div>
+</div>

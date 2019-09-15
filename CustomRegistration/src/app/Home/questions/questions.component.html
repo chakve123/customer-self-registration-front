@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="row">
+    <div class="col">
+        <div class="row">
+            <div class="col top-bar">
+                <i (click)="onBack()" class="material-icons float-left">arrow_back</i>
+                <span>ფიზიკური პირის საბაჟო დეკლარაცია</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="maindiv">
+    <p class="questionTitle">ინფორმაცია საქონლის შესახებ</p>
+    <div class="bordertop"> </div>
+    <p *ngIf="true" class="question"> {{question_array[index].question}} </p>
+    <div class="borderbottom"> </div>
+    <button class="button button4" (click)="onYes()">yes</button>
+    <button class="button button2" (click)="onNo()">no</button>
+</div>

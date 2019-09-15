@@ -1,0 +1,16 @@
+D:\Projects\EservicesAPI\EservicesLib\obj\Debug\EservicesLib.csprojAssemblyReference.cache
+D:\Projects\EservicesAPI\EservicesLib\obj\Debug\EservicesLib.csproj.CoreCompileInputs.cache
+D:\Projects\EservicesAPI\EservicesLib\bin\Debug\EservicesLib.dll
+D:\Projects\EservicesAPI\EservicesLib\bin\Debug\EservicesLib.pdb
+D:\Projects\EservicesAPI\EservicesLib\bin\Debug\BaseLib.dll
+D:\Projects\EservicesAPI\EservicesLib\bin\Debug\Oracle.DataAccess.dll
+D:\Projects\EservicesAPI\EservicesLib\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\EservicesAPI\EservicesLib\bin\Debug\SevenZipSharp.dll
+D:\Projects\EservicesAPI\EservicesLib\bin\Debug\NPOI.dll
+D:\Projects\EservicesAPI\EservicesLib\bin\Debug\HtmlSanitizationLibrary.dll
+D:\Projects\EservicesAPI\EservicesLib\bin\Debug\BaseLib.pdb
+D:\Projects\EservicesAPI\EservicesLib\bin\Debug\Newtonsoft.Json.pdb
+D:\Projects\EservicesAPI\EservicesLib\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\EservicesAPI\EservicesLib\obj\Debug\EservicesLib.csproj.CopyComplete
+D:\Projects\EservicesAPI\EservicesLib\obj\Debug\EservicesLib.dll
+D:\Projects\EservicesAPI\EservicesLib\obj\Debug\EservicesLib.pdb

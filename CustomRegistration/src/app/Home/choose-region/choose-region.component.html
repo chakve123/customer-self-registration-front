@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col">
+        <div class="row">
+            <div class="col top-bar">
+                <i (click)="onBack()" class="material-icons float-left">arrow_back</i>
+                <span>ფიზიკური პირის საბაჟო დეკლარაცია</span>
+            </div>
+        </div>
+    </div>
+</div>
+<h4 class="mt-5 text-center gray-heading pt-5 mb-5">მოქალაქეობა და პირადი მონაცემები</h4>
+<div class="d-flex justify-content-center mt-5 pt-5">
+    <div (click)="onClickRegion('geo')" class="huge-button mr-5">საქართველოს მოქალაქე</div>
+    <div (click)="onClickRegion('other')" class="ml-5 huge-button"> უცხო ქვეყნის მოქალაქე</div>
+</div>
