@@ -1,20 +1,12 @@
-<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CustomerService } from '../customer.service';
-import { FormBuilder, FormControl } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Country } from '../relocate-detail/Country';
 import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
 import {MenuItem} from 'primeng/api';  
-=======
-import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
-import {CustomerService} from '../customer.service';
-import {FormBuilder, FormControl, Validators} from '@angular/forms';
-import {Country} from '../relocate-detail/Country';
 import {CountryService} from "../../country.service";
 
->>>>>>> 962c403fce81527043d7449a1bdf414e545d480d
 
 @Component({
   selector: 'app-personal-info-other',
