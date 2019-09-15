@@ -7,8 +7,8 @@
     <div class="col languages p-5 m-5">
         <h4 class="mb-5">აირჩიეთ ენა / Choose Language / выберите язык</h4>
 
-        <div (click)="onClick()" class="row flags-container">
-            <div class="col" *ngFor="let country of countryList">
+        <div class="row flags-container">
+            <div class="col" *ngFor="let country of countryList" (click)="onClick(country.name)">
                 <img [src]="country.imgPath">
                 <p>{{country.name}}</p>
             </div>
