@@ -20,10 +20,8 @@ export class RelocatePurposeComponent implements OnInit {
 
   onClick(purpose) {
     this.customerService.add({purpose});
-    this.router.navigate(['/relocateDetail'+this.url])
+    this.router.navigate(['/relocateDetail'])
   }
 
-  onBack(){
-    this.router.navigate(['/personalInfo'+this.url])
-  }
+ 
 }
