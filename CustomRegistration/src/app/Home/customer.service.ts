@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -7,37 +7,44 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class CustomerService {
   private customerData = {};
   private url = 'http://localhost:52131/api/';
-  constructor(private http: HttpClient) { }
+
+  constructor(private http: HttpClient) {
+  }
 
   public add(val) {
     this.customerData = {...this.customerData, ...val};
-    console.log(this.customerData);
   }
 
   public getCustomerData(): any {
     return this.customerData;
   }
 
-  public getCustomerDataById(id){
+  public getCustomerDataById(id) {
 
-    var json={
-      PersonID:id
+    var json = {
+      PersonID: id
     };
     const httpOptions = {
-      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+      headers: new HttpHeaders({'Content-Type': 'application/json'})
     };
 
-    return this.http.post(this.url+"CustomSelfDeclaration/GetUserInfo",json,httpOptions);
+    return this.http.post(this.url + "CustomSelfDeclaration/GetUserInfo", json, httpOptions);
   }
-  public getGuestDataById(id){
 
-    var json={
-      PersonID:id
+  public getGuestDataById(id) {
+
+    var json = {
+      PersonID: id
     }
     const httpOptions = {
-      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+      headers: new HttpHeaders({'Content-Type': 'application/json'})
     };
 
-    return this.http.post(this.url+"CustomSelfDeclaration/GetGuestInfo",json,httpOptions);
+    return this.http.post(this.url + "CustomSelfDeclaration/GetGuestInfo", json, httpOptions);
+  }
+
+  public registerInfo() {
+    console.log(this.customerData);
+    return this.http.post(this.url, this.customerData);
   }
 }
