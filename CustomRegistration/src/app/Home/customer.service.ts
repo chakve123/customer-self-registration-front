@@ -11,7 +11,7 @@ export class CustomerService {
 
   public add(val) {
     this.customerData = {...this.customerData, ...val};
-    console.log(this.customerData)
+    console.log(this.customerData);
   }
 
   public getCustomerData(): any {
@@ -22,7 +22,7 @@ export class CustomerService {
 
     var json={
       PersonID:id
-    }
+    };
     const httpOptions = {
       headers: new HttpHeaders({ 'Content-Type': 'application/json' })
     };
