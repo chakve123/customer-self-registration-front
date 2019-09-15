@@ -20,12 +20,10 @@ url="/12";
     this.customerService.add({region});
     if(region=="geo"){
 
-    this.router.navigate(['personalInfo'+this.url])}
+    this.router.navigate(['personalInfo'])}
     else{
-      this.router.navigate(['personalInfoOther'+this.url])
+      this.router.navigate(['personalInfoOther'])
     }
   }
-  onBack(){
-    this.router.navigate(['/chooseServices'+this.url])
-  }
+ 
 }

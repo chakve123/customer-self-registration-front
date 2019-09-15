@@ -20,6 +20,6 @@ export class SuccessPageComponent implements OnInit {
   goHome(){
 
 this.secondCode++;
-this.router.navigate(['/home'+this.url])
+this.router.navigate(['/home'])
   }
 }

@@ -67,11 +67,9 @@ export class PersonalInfoOtherComponent implements OnInit {
 
     });
   }
-  onBack() {
-    this.router.navigate(['/chooseRegion' + this.url])
-  }
+ 
   onSubmit() {
-    this.router.navigate(['/relocatePurpose' + this.url])
+    this.router.navigate(['/relocatePurpose' ])
 
 
   }

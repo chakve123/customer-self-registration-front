@@ -15,20 +15,20 @@ import { RelocateDetailComponent } from './Home/relocate-detail/relocate-detail.
 import { PersonalInfoOtherComponent } from './Home/personal-info-other/personal-info-other.component';
 
 
-const url=12;
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'chooseServices/'+url, component: ChooseServicesComponent },
-  { path: 'home/'+url, component: HomeComponent },
-  { path: 'personalInfo/'+url, component: PersonalInfoComponent },
-  { path: 'infoGoods/'+url, component: InfoGoodsComponent },
-  { path: 'relocatePurpose/'+url, component:RelocatePurposeComponent },
-  { path: 'successPage/'+url, component: SuccessPageComponent },
-  { path: 'questions/'+url, component: QuestionsComponent },
-  { path: 'InputInfoGoods/'+url, component: InputInfoGoodsComponent },
-  { path: 'chooseRegion/'+url, component: ChooseRegionComponent },
-  { path: 'relocateDetail/'+url, component: RelocateDetailComponent },
-  { path: 'personalInfoOther/'+url, component: PersonalInfoOtherComponent },
+  { path: 'chooseServices', component: ChooseServicesComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'personalInfo', component: PersonalInfoComponent },
+  { path: 'infoGoods', component: InfoGoodsComponent },
+  { path: 'relocatePurpose', component:RelocatePurposeComponent },
+  { path: 'successPage', component: SuccessPageComponent },
+  { path: 'questions', component: QuestionsComponent },
+  { path: 'InputInfoGoods', component: InputInfoGoodsComponent },
+  { path: 'chooseRegion', component: ChooseRegionComponent },
+  { path: 'relocateDetail', component: RelocateDetailComponent },
+  { path: 'personalInfoOther', component: PersonalInfoOtherComponent },
 
  
 

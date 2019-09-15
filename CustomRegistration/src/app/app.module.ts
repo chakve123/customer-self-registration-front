@@ -20,6 +20,7 @@ import { PersonalInfoOtherComponent } from './Home/personal-info-other/personal-
 import {CalendarModule} from 'primeng/calendar';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderNotificationComponent } from './Home/header-notification/header-notification.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ChooseRegionComponent,
     RelocateDetailComponent,
     
-    PersonalInfoOtherComponent
+    PersonalInfoOtherComponent,
+    
+    HeaderNotificationComponent
   ],
   imports: [
     BrowserModule,

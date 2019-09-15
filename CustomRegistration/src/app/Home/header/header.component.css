@@ -46,20 +46,3 @@ header .HeaderIcon {
     z-index: 9;
     margin-left: 30px;
 }
-
-.MainNote {
-    width: auto;
-    height: 70px;
-    background-color: #eeeef0;
-    margin-bottom: 50px;
-    position: fixed;
-    top: 70px;
-    left: 0px;
-    right: 0px;
-    z-index: 100;
-}
-
-.MainNote p {
-    color: tomato;
-    text-align: center;
-}

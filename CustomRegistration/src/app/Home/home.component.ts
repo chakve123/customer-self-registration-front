@@ -1,12 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  
 })
 export class HomeComponent implements OnInit {
+ 
+ 
   countryList = [
     {name:'საქართველო', imgPath:'../assets/imgs/flag-geo.png'},
     {name:'ENGLISH', imgPath:'../assets/imgs/UK.png'},
@@ -28,14 +31,14 @@ export class HomeComponent implements OnInit {
     
     
   ]
-  url="/12";
+ 
   constructor(private router:Router) { }
 
-  ngOnInit() {
-  }
+ 
+ngOnInit(){}
 
   onClick(){
-    this.router.navigate(['/chooseServices'+this.url]);
+    this.router.navigate(['/chooseServices']);
     
   }
   

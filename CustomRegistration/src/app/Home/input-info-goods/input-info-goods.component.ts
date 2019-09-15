@@ -27,11 +27,8 @@ export class InputInfoGoodsComponent implements OnInit {
       this.form.get("course").setValue(val);
     })
   }
-  onBack(){
-
-this.router.navigate(['/questions'+this.url])
-  }
+ 
   confirm(){
-    this.router.navigate(['successPage'+this.url])
+    this.router.navigate(['successPage'])
   }
 }

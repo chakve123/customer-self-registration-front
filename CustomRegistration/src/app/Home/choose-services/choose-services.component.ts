@@ -7,16 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./choose-services.component.css']
 })
 export class ChooseServicesComponent implements OnInit {
-  url="/12";
+  
   constructor(private router:Router) { }
 
   ngOnInit() {
   }
-  onBack(){
-    this.router.navigate(['/home'+this.url])
-  }
+ 
   onPhisic() {
-    this.router.navigate(['/chooseRegion'+this.url])
+    this.router.navigate(['/chooseRegion'])
   }
   Tax_Free() {
     alert("WORK")

@@ -27,11 +27,9 @@ export class RelocateDetailComponent implements OnInit {
   }
 onSubmit(){
 
-  this.router.navigate(['/questions'+this.url])
+  this.router.navigate(['/questions'])
 
 
 }
-onBack(){
-  this.router.navigate(['/relocatePurpose'+this.url])
-}
+
 }

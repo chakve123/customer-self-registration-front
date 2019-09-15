@@ -38,10 +38,10 @@ export class QuestionsComponent implements OnInit {
 
   onYes() {
     if (this.index == this.length-1) {
-      this.router.navigate(['/InputInfoGoods'+this.url])
+      this.router.navigate(['/InputInfoGoods'])
     }
     else {
-      this.router.navigate(['/infoGoods'+this.url])
+      this.router.navigate(['/infoGoods'])
     }
   }
 
@@ -53,10 +53,8 @@ export class QuestionsComponent implements OnInit {
       console.log(this.index, this.length)
 
     } else {
-      this.router.navigate(['/infoGoods'+this.url])
+      this.router.navigate(['/infoGoods'])
     }
   }
-  onBack(){
-    this.router.navigate(['/relocateDetail'+this.url])
-  }
+
 }
