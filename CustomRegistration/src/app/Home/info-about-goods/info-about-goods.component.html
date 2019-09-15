@@ -1,0 +1,57 @@
+<app-header></app-header>
+<app-header-notification></app-header-notification>
+<p class="title">ინფორმაცია საქონლის შესახებ</p>
+<table [formGroup]="form">
+  <thead>
+    <tr>
+      <th>ფულადი სახსრები</th>
+      <th>რაოდენობა</th>
+      <th>ვალუტა</th>
+      <th>კურსი</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <select required formControlName="paymentType">
+          <option value="" disabled selected>აირჩიეთ ჩამონათვალიდან</option> -->
+          <option value="ნაღდი ფულით">ნაღდი ფულით</option>
+          <option value="ბარათით">ბარათით</option>
+        </select>
+      </td>
+      <td>
+        <input type="text" min="1" formControlName="quantity">
+      </td>
+      <td>
+        <select required class="choose" formControlName="currency">
+          <option value="" disabled selected>აირჩიეთ</option> -->
+          <option value="GEL">GEL</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </td>
+      <td>
+        <input type="text" value="2.86" disabled formControlName="rate">
+
+      </td>
+      <td>
+          <button (click)="add()">
+              + დამატება
+          </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+    <tbody>
+        <tr *ngFor="let item of info" class="info">
+            <td>{{item.paymentType}}</td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.currency}}</td>
+            <td>{{item.rate}}</td>
+            <td (click)="remove(item)">წაშლა</td>
+        </tr>
+    </tbody>
+</table>
+<button (click)="onClick()">შემდეგი</button>

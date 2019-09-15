@@ -1,0 +1,65 @@
+.title {
+  font-size: 20px;
+  color: grey;
+  text-align: center;
+}
+
+table {
+ width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  border-collapse: separate;
+}
+
+th {
+  width: 250px;
+  padding-bottom: 10px;
+}
+
+select {
+  height: 50px;
+  border-radius: 5px;
+  border-color: rgb(167, 164, 164);
+}
+
+.choose {
+  width: 170px;
+
+}
+
+input {
+  width: 200px;
+  height: 50px;
+  border: 1px solid rgb(167, 164, 164);;
+  border-radius: 5px;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+}
+
+.info {
+   height: 50px;
+   background-color: rgb(221, 220, 220);
+   border: 1px solid rgb(184, 184, 184);
+   margin-bottom: 30px;
+}
+.info:first-child td:first-child { border-top-left-radius: 5px; }
+.info:first-child td:last-child { border-top-right-radius: 5px; }
+.info:last-child td:first-child { border-bottom-left-radius: 5px; }
+.info:last-child td:last-child { border-bottom-right-radius: 5px; }
+
+.info > td {
+    border: 1px solid rgb(184, 184, 184);
+}
+
+.info :last-child{
+    color:red;
+    cursor: pointer;
+}

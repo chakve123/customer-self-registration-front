@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {ReactiveFormsModule,FormsModule} from '@angular/forms'
-
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Home/home.component';
@@ -18,9 +17,9 @@ import { RelocateDetailComponent } from './Home/relocate-detail/relocate-detail.
 import { HttpClientModule } from '@angular/common/http';
 import { PersonalInfoOtherComponent } from './Home/personal-info-other/personal-info-other.component';
 import {CalendarModule} from 'primeng/calendar';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderNotificationComponent } from './Home/header-notification/header-notification.component';
+import { InfoAboutGoodsComponent } from './Home/info-about-goods/info-about-goods.component';
 
 @NgModule({
   declarations: [
@@ -36,17 +35,17 @@ import { HeaderNotificationComponent } from './Home/header-notification/header-n
     HeaderComponent,
     ChooseRegionComponent,
     RelocateDetailComponent,
-    
     PersonalInfoOtherComponent,
-    
-    HeaderNotificationComponent
+    HeaderNotificationComponent,
+    InfoAboutGoodsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule,CalendarModule,
+    HttpClientModule,
+    CalendarModule,
     BrowserAnimationsModule
 
   ],

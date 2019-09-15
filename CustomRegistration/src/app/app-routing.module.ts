@@ -13,6 +13,7 @@ import { InputInfoGoodsComponent } from './Home/input-info-goods/input-info-good
 import { ChooseRegionComponent } from './Home/choose-region/choose-region.component';
 import { RelocateDetailComponent } from './Home/relocate-detail/relocate-detail.component';
 import { PersonalInfoOtherComponent } from './Home/personal-info-other/personal-info-other.component';
+import { InfoAboutGoodsComponent } from './Home/info-about-goods/info-about-goods.component';
 
 
 
@@ -29,8 +30,7 @@ const routes: Routes = [
   { path: 'chooseRegion', component: ChooseRegionComponent },
   { path: 'relocateDetail', component: RelocateDetailComponent },
   { path: 'personalInfoOther', component: PersonalInfoOtherComponent },
-
- 
+  { path: 'info', component: InfoAboutGoodsComponent },
 
 ];
 
