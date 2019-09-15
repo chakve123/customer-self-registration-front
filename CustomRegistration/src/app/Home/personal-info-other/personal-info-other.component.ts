@@ -3,7 +3,8 @@ import { Router } from '@angular/router';
 import { CustomerService } from '../customer.service';
 import { FormBuilder, FormControl } from '@angular/forms';
 import { Country } from '../relocate-detail/Country';
-
+import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+import {MenuItem} from 'primeng/api';  
 
 @Component({
   selector: 'app-personal-info-other',

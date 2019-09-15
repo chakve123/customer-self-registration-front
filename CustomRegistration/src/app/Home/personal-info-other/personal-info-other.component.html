@@ -10,7 +10,6 @@
 
             <div class="personDiv" data-validate="Name is required">
                 <span class="personSpan">პირადი ან საბუთის ნომერი *</span>
-                <!-- <input class="input100" type="text" placeholder="პირადი ნომერი" #input (input)="input.value=$event.target.value.toUpperCase()" /> -->
                 <input class="PersonInput" type="text" name="name" placeholder="00aa00000 " formControlName="id" #input (input)="input.value=$event.target.value.toUpperCase()">
             </div>
             <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
@@ -24,12 +23,13 @@
                     <option *ngFor="let country of countryList" [value]="country.Country">{{country.Name}}</option>                
                 
                 </select>
-                <!-- <input class="input100 ng-tns-c4-9 ng-pristine ng-valid ng-touched" type="text" name="email" placeholder="დაბადების ადგილი" formControlName="birthLoc"> -->
             </div>
 
             <div class="wrap-input100">
                 <span class="label-input100">დაბადების თარიღი</span>
-                <input class="input100" type="date" name="web" formControlName="birthDate">
+
+
+                <!-- <input class="input100" type="date" name="web" formControlName="birthDate"> -->
             </div>
             <div class="wrap-input100">
                 <span class="label-input100">მუდმივი საცხოვრებელი</span>
@@ -37,7 +37,6 @@
                     <option *ngFor="let country of countryList" [value]="country.Country">{{country.Name}}</option>                
                 
                 </select>
-                <!-- <input class="input100" type="text" placeholder="მუდმივი საცხოვრებელი" formControlName="address"> -->
             </div>
 
 
@@ -54,4 +53,8 @@
     </div>
 
 
+</div>
+
+<div class="input-group date">
+    <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
 </div>
